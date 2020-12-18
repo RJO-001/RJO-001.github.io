@@ -9,7 +9,7 @@
 </head>
 <body>
     <header>
-        <h1>Sudoku</h1>
+        <h1>SUDOKU</h1>
         <input type="button" class="button" value="home" onclick="main()">
         <h2>Number of Tries:<div id="tries"></div></h2>
     </header>
@@ -42,9 +42,10 @@
             <h1></h1>
             <input type="button" class="button" value="Play Again" onclick='main()''>
         </section>
-        <!-- terus bikin overlay buat pas selesai dan bisa main lagi -->
-        <!-- hias deh, pake background hacktiv8 gitu? bikin border per tiga" kayanya turunin border sekarang juga tebel banget -->
-        <!-- tambah soal lagi kali kalo mau https://dingo.sbs.arizona.edu/~sandiway/sudoku/examples.html yang not fun -->
+        <footer>
+            <input style='background-color: hsla(73, 62%, 50%, 0.8)' type='text' class="box" maxlength="1"><p>means your answer are correct</p>
+            <input style='background-color: hsla(3, 96%, 52%,0.8)' type='text' class="box" maxlength="1"><p>means your answer are wrong (valid answer are number 1 to 9)</p>
+        </footer>
     </main>
     <script src="script.js"></script>
 </body>

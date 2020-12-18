@@ -10,7 +10,7 @@ body {
 }
 header {
     padding: 50px;
-    width: 1366px;
+    width: 1405px;
     color: white;
     font-family: sans-serif;
     background-color: hsla(203, 82%, 64%, 0.8);
@@ -23,6 +23,11 @@ header h2 {
 }
 main {
     text-align: center;
+}
+footer {
+    text-align: left;
+    margin-left: 10px;
+    font-family: sans-serif;
 }
 #tries{
     font-size: 1.5em;;
@@ -91,7 +96,7 @@ input {
     width: 100vw;
     height: 100vh;
     z-index: 9999;
-    background-color: #58b4ee;
+    background-image: url("./asset/bluebackground.jpg");
     text-align:center;
     font-family: sans-serif;
     font-size: 2em;
@@ -124,8 +129,8 @@ input {
 }
 #instruct {
     position: absolute;
-    width: 1470px;
-    height: 768px;
+    width: 1505px;
+    height: 900px;
     top: 0;
     z-index: 9999;
     background-color:rgba(88, 180, 238, 0.5);
@@ -179,8 +184,8 @@ header .button {
 #select .button {
     position: relative;
     top: 50vh;
-    width: 20vw;
-    height: 15vh;
+    width: 280px;
+    height: 80px;
     background-color: white;
     color: #58b4ee;
     border: none;
