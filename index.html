@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Sudoku</title>
+    <link rel="stylesheet" href="style.css" type="text/css">
+    <link rel="icon" href="./asset/sudoku.ico" type="image/ico" sizes="128x128">
+</head>
+<body>
+    <header>
+        <h1>Sudoku</h1>
+        <input type="button" class="button" value="home" onclick="main()">
+        <h2>Number of Tries:<div id="tries"></div></h2>
+    </header>
+    <main>
+        <section id="board">
+           
+        </section>
+        <section id="select"> 
+            <h1>SUDOKU</h1>
+            <input type="button" class="button" value="easy" onclick="levelSelect(value)">
+            <input type="button" class="button" value="medium" onclick="levelSelect(value)">
+            <input type="button" class="button" value="hard" onclick="levelSelect(value)">
+            <input type="button" class="button" value="how to play" onclick="instruct()">
+        </section>
+        <section id="instruct"> 
+            <div id="instruct1">
+                <p>Each row need to have each number from 1 to 9</p>
+                <input type='button' class='button' value='next' onclick="instruct1()">
+            </div>
+            <div id="instruct2">
+                <p>Each column also need to have each number from 1 to 9</p>
+                <input type='button' class='button' value='next' onclick="instruct2()">
+            </div>
+            <div id="instruct3">
+                <p>Finaly, each region also need to have each number from 1 to 9</p>
+                <input type='button' class='button' value='back' onclick="toSelect()">
+            </div>
+        </section>
+        <section id="finish">
+            <h1></h1>
+            <input type="button" class="button" value="Play Again" onclick='main()''>
+        </section>
+        <!-- terus bikin overlay buat pas selesai dan bisa main lagi -->
+        <!-- hias deh, pake background hacktiv8 gitu? bikin border per tiga" kayanya turunin border sekarang juga tebel banget -->
+        <!-- tambah soal lagi kali kalo mau https://dingo.sbs.arizona.edu/~sandiway/sudoku/examples.html yang not fun -->
+    </main>
+    <script src="script.js"></script>
+</body>
+</html>
