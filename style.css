@@ -163,8 +163,8 @@ input {
 }
 #instruct .button {
     position: absolute;
-    right: 100px;
-    top: 600px;
+    left: 0;
+    top: 90px;
     width: 150px;
     height: 70px;
     background-color: white;
